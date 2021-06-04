@@ -107,7 +107,7 @@ cp $SOURCES_DIR/start_db.elf $SYSROOT_DIR/boot/
 cp $SOURCES_DIR/start_x.elf $SYSROOT_DIR/boot/
 
 step "$totalsteps] Basic config"
-at > /etc/hosts << EOF
+cat > /etc/hosts << EOF
 "127.0.0.1 localhost $(hostname)" 
 ::1        localhost
 EOF
